@@ -3,6 +3,7 @@ I'll be cloning popular websites until I purchase the course to improve my HTML 
 
 <h1>Day 1</h1>
 <h3>Spotify Clone</h3>
+<a href="https://baaka-spotify.netlify.app/">Click here</a>
 <ul>
   <li>Flex Box</li>
   <li>Typography</li>
