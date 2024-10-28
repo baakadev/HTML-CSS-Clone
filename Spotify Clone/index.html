@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Clone - Listen to music</title>
+    <link rel="icon" href="assets/icon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="assets/logo.png" alt="Spotify logo" />
+        </div>
+        <div class="search-bar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search for your favourite songs..." />
+        </div>
+        <div class="user">
+          <button class="btn login">Log In</button>
+          <button class="btn register">Sign Up</button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- =============Hero left Section================= -->
+
+    <section class="hero">
+      <aside class="left-section">
+        <div class="your-library-heading">
+          <div class="your-library">
+            <i class="fa-solid fa-swatchbook"></i>
+            <label for="yourLibrary">Your Library</label>
+          </div>
+          <div class="add-your-library">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+        </div>
+        <div class="create-playlist-edit-podcast">
+          <div class="create-playlist">
+            <h3>Create your first playlist</h3>
+            <label for="dis" class="dis">It's easy we'll help you.</label>
+            <button class="btn">Create playlist</button>
+          </div>
+          <div class="create-podcast">
+            <h3>Let's find some podcast to follow</h3>
+            <label for="dis">We'll keep you updated on a new episode.</label>
+            <button class="btn">Browse podcast</button>
+          </div>
+        </div>
+        <div class="aside-footer">
+          <footer>
+            <ul>
+              <li><a href="">Legal</a></li>
+              <li><a href="#">Safety & Privacy Center</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Cookies</a></li>
+              <li><a href="#">About Ads</a></li>
+              <li><a href="#">Accessibility</a></li>
+            </ul>
+          </footer>
+        </div>
+        <div class="lang-btn">
+          <i class="fa-solid fa-globe"></i>
+          <button>English</button>
+        </div>
+      </aside>
+
+      <!-- =================Right-setion============= -->
+
+      <aside class="right-section">
+        <!-- ======Popular artists========== -->
+
+        <div class="popular-artist-section">
+          <div class="popular-artist-top">
+            <h1>Popular artists</h1>
+            <a href="#show-all">Show all</a>
+          </div>
+          <div class="artists">
+            <!-- =======Artist card========= -->
+            <div class="artist-card">
+              <img src="assets/purna rai.jpg" alt="Purna rai" />
+              <div class="play-btn">
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="artist-name">
+                <h2>Purna Rai</h2>
+                <p>Artist</p>
+              </div>
+            </div>
+
+            <div class="artist-card">
+              <img src="assets/kushal pokhrel.jpg" alt="Kushal Pokhrel" />
+              <div class="play-btn">
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="artist-name">
+                <h2>Kushal Pokhrel</h2>
+                <p>Artist</p>
+              </div>
+            </div>
+
+            <div class="artist-card">
+              <img src="assets/sajjan raj vaidya.png" alt="Sajjan Raj Vaidya" />
+              <div class="play-btn">
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="artist-name">
+                <h2>Sajjan Raj Vaidya</h2>
+                <p>Artist</p>
+              </div>
+            </div>
+
+            <div class="artist-card">
+              <img src="assets/sushant Kc.jpg" alt="Sushant Kc" />
+              <div class="play-btn">
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="artist-name">
+                <h2>Sushant Kc</h2>
+                <p>Artist</p>
+              </div>
+            </div>
+          </div>
+          <!-- =======Artist card========= -->
+        </div>
+
+        <!-- ===============Popular albums============ -->
+
+        <div class="popular-albums">
+          <div class="popular-albums-heading">
+            <h1>Popular albums</h1>
+            <a href="#show-all">Show all</a>
+          </div>
+
+          <!-- =========Albums List============ -->
+          <div class="albums">
+            <!-- ===========album card=============== -->
+
+            <div class="album-card">
+              <img src="assets/roka yo samaya.jpg" alt="Roka yo samaya" />
+              <div class="play-btn">
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="album-name">
+                <p class="title">Roka yo samay</p>
+                <p class="artist">Tribal rain</p>
+              </div>
+            </div>
+
+            <div class="album-card">
+              <img src="assets/maya ma.jpg" alt="Maya ma" />
+              <div class="play-btn">
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="album-name">
+                <p class="title">Maya ma</p>
+                <p class="artist">Sushant Kc</p>
+              </div>
+            </div>
+
+            <div class="album-card">
+              <img src="assets/hit me hard.png" alt="hit me hard" />
+              <div class="play-btn">
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="album-name">
+                <p class="title">Hit me hard</p>
+                <p class="artist">Billie Eilish</p>
+              </div>
+            </div>
+
+            <div class="album-card">
+              <img src="assets/sparsha sangeet.jpg" alt="Sparsha sangeet" />
+              <div class="play-btn">
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="album-name">
+                <p class="title">Sparsha Sangeet</p>
+                <p class="artist">Purna Rai</p>
+              </div>
+            </div>
+
+            <!-- ===========Album card============= -->
+          </div>
+        </div>
+
+        <!-- ===========Popular albums============ -->
+
+        <!-- ==============Popular radio ============ -->
+
+        <div class="popular-radio">
+          <div class="popular-radio-heading">
+            <h1>Popular radio</h1>
+            <a href="#show-all">Show all</a>
+          </div>
+          <div class="radio-list">
+          <!-- ========Radio cards========= -->
+            <div class="radio-card">
+            <img src="assets/john rai radio.jpg" alt="John rai" />
+            <div class="play-btn">
+              <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="radio-title">
+              <p class="title">With Purna Rai, John Rai and many more...</p>
+            </div>
+           </div>
+
+            <div class="radio-card">
+            <img src="assets/purna rai radio.jpg" alt="Purna rai" />
+            <div class="play-btn">
+              <i class="fa-solid fa-play"></i>
+             </div>
+              <div class="radio-title">
+              <p class="title">With John Rai, Purna rai and many more...</p>
+              </div>
+           </div>
+
+            <div class="radio-card">
+            <img src="assets/kuma sagar radio.jpg" alt="Kuma Sagar" />
+              <div class="play-btn">
+              <i class="fa-solid fa-play"></i>
+             </div>
+              <div class="radio-title">
+              <p class="title">With Bipul, Sushant Ghimire and more...</p>
+              </div>
+           </div>
+
+          <div class="radio-card">
+            <img src="assets/rockheads radio.jpg" alt="Rockheads" />
+            <div class="play-btn">
+              <i class="fa-solid fa-play"></i>
+            </div>
+            <div class="radio-title">
+              <p class="title">With The Element, Purna Rai and many more...</p>
+            </div>
+          </div>
+<!-- ===============Radio card========== -->
+        </div>
+        <footer class="footer">
+          <div class="company">
+            <h2>Company</h2>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">For the Records</a></li>
+            </ul>
+          </div>
+          <div class="communities">
+            <h2>Communities</h2>
+            <ul>
+              <li><a href="#">For Artists</a></li>
+              <li><a href="#">Developers</a></li>
+              <li><a href="#">Advertising</a></li>
+              <li><a href="#">Investors</a></li>
+              <li><a href="#">Vendors</a></li>
+            </ul>
+          </div>
+          <div class="useful-links">
+            <h2>Useful Links</h2>
+            <ul>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Free Mobile App</a></li>
+            </ul>
+          </div>
+          <div class="spotify-plans">
+            <h2>Spotify Plans</h2>
+            <ul>
+              <li><a href="#">Premium Individual</a></li>
+              <li><a href="#">Premium Family</a></li>
+              <li><a href="#">Premium Student</a></li>
+              <li><a href="#">Premium Duo</a></li>
+              <li><a href="#">Spotify Free</a></li>
+            </ul>
+          </div>
+          <div class="social-links">
+            <ul>
+              <li><a href="#instagram"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="#x"><i class="fa-brands fa-x-twitter"></i></a></li>
+              <li><a href="#facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+            </ul>
+          </div>
+        </footer>
+        <footer class="copyright">
+          <p>&copy; 2024 Spotify Clone. All rights reserved. By Baaka</p>
+        </footer>
+      </aside>
+    </section>
+  </body>
+</html>
