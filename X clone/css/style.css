@@ -1,0 +1,405 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --darkBg-color: #1d1d1d;
+  --white-clr: #efefef;
+  --sans-serif: sans-serif;
+  --line-color: #6f6f6f;
+  --accent-color: #006eff;
+  --blue-hastag: #0088ff;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: var(--darkBg-color);
+  color: var(--white-clr);
+  font-family: var(--sans-serif);
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  /* Width of the scrollbar */
+  height: 12px;
+  /* Height of the scrollbar for horizontal scrolling */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  /* Background color of the scrollbar track */
+  border-radius: 10px;
+  /* Roundness of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  /* Color of the scrollbar thumb */
+  border-radius: 10px;
+  /* Roundness of the scrollbar thumb */
+  border: 3px solid #f1f1f1;
+  /* Adds a border to the thumb for additional padding */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+  /* Color of the scrollbar thumb on hover */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+}
+
+.profile {
+  width: 5rem;
+}
+
+img {
+  width: 100%;
+}
+
+.profile img {
+  border-radius: 50%;
+}
+
+.logo {
+  /*Logo*/
+  width: 5rem;
+}
+
+.header-top {
+  display: flex;
+  padding: 1.5rem 2rem;
+  justify-content: space-between;
+}
+
+/* ========Feed List============ */
+.container .main-container {
+  width: 100%;
+  overflow-y: scroll;
+  margin: 0 auto;
+}
+
+.feed-list {
+  width: 100%;
+  margin-top: 1rem;
+  font-size: 2rem;
+  position: relative;
+}
+
+.feed-list ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.feed-list ul li {
+  list-style: none;
+}
+
+.feed-list ul li a {
+  color: var(--white-clr);
+  text-decoration: none;
+}
+
+.feed-list::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  bottom: -1rem;
+  left: 0;
+  background-color: var(--line-color);
+}
+
+.feed-list ul li::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 40%;
+  bottom: -1rem;
+  left: 0;
+  margin-left: 2rem;
+  background-color: var(--accent-color);
+}
+
+/* ===================Feed Section Start=============== */
+
+.feed-section {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 2rem;
+}
+
+.user-post {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin: 2rem 0;
+}
+
+.user-details {
+  display: flex;
+  gap: 1rem;
+  height: 100%;
+}
+
+.user-details .user-name {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.user-details .username {
+  color: gray;
+  font-size: 1.2rem;
+}
+
+.user-photos {
+  width: 4.5rem;
+}
+
+.user-photos img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.post-head {
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-body {
+  font-size: 1.4rem;
+}
+
+.hashtag {
+  color: var(--blue-hastag);
+}
+
+.post-img {
+  display: grid;
+  grid-template-columns: minmax(50%, auto) 1fr 1fr;
+  padding: 1rem 0;
+}
+
+.post-reaction {
+  display: flex;
+  justify-content: space-between;
+  height: 2.5rem;
+}
+
+.user-post::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  bottom: -1rem;
+  left: 0;
+  background-color: var(--line-color);
+}
+
+/* ===========Phone Footer================ */
+.phone-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 1rem 1.5rem;
+  width: 100%;
+  height: 7rem;
+  background-color: black;
+}
+
+.phone-footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.phone-footer ul li {
+  list-style: none;
+  transition: 0.3s linear;
+}
+
+.phone-footer ul li a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.phone-footer ul li:hover {
+  scale: 1.1;
+}
+
+.phone-footer ul li a img {
+  width: 3rem;
+}
+
+.phone-footer ul li a label {
+  color: white;
+  display: inline-block;
+}
+
+/* ===================Side Menu================== */
+.left-container {
+  width: 20%;
+  height: 100%;
+  padding: 2rem 4rem 2rem 0;
+  display: none;
+  position: sticky;
+  top: 0;
+  left: 0;
+  border-radius: 1rem;
+}
+
+.left-container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: left;
+  padding-left: 2rem;
+}
+
+.left-container ul li {
+  list-style: none;
+  position: relative;
+  transition: 0.3s ease;
+  width: 100%;
+}
+
+.left-container ul li:hover {
+  scale: 1.1;
+}
+
+.left-container ul li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 1rem;
+}
+
+.left-container ul li img {
+  width: 3.5rem;
+}
+
+.left-container ul li a span {
+  color: white;
+  display: inline-block;
+  font-size: 1.8rem;
+}
+
+/* ==================Right Container ================= */
+.right-container {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  height: 100%;
+  padding: 2rem 3rem;
+  position: relative;
+  top: 0;
+  right: 0;
+  display: none;
+}
+.trends {
+  font-size: 2rem;
+  border: 1px solid var(--line-color);
+  border-radius: 1.3rem;
+  color: #e6e6e6;
+  padding: 2rem 1.5rem;
+  background-color: #3a3a3a24;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.trends-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.right-container h1 {
+  font-size: 3rem;
+}
+.right-container .dim {
+  color: gray;
+}
+.right-container .trend-topic {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.trends-list a {
+  text-decoration: none;
+  color: var(--accent-color);
+}
+.trends-list a:hover {
+  text-decoration: underline;
+}
+
+.whotofollow {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border: 1px solid var(--line-color);
+  padding: 2rem 1.5rem;
+  border-radius: 1.3rem;
+  position: sticky;
+}
+.whotofollow h1 {
+  font-size: 3rem;
+}
+.account-list {
+  display: flex;
+  flex-direction: column;
+}
+.account-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.whotofollow .name-and-user {
+  font-size: 2rem;
+}
+.account-list .logo {
+  width: 6rem;
+}
+.account-card .logo img {
+  width: 100%;
+}
+.account-card .left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.account-list .name {
+  font-weight: 600;
+}
+.name-and-user .username {
+  color: var(--line-color);
+  font-size: 1.6rem;
+}
+.account-card .follow-btn button {
+  padding: 0.8rem 1.6rem;
+  font-size: 1.6rem;
+  border-radius: 1.4rem;
+  border: none;
+  font-weight: bold;
+  margin-right: 2rem;
+}
+.footer-right {
+  font-size: 1.5rem;
+  color: var(--line-color);
+}

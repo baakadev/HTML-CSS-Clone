@@ -1,0 +1,18 @@
+@media (min-width: 481px) {
+  .phone-footer {
+    display: none;
+  }
+  .left-container {
+    display: flex;
+    align-items: start;
+  }
+  .header-top {
+    display: none;
+  }
+  .main-container {
+    width: 100%;
+  }
+  .right-container {
+    display: none;
+  }
+}

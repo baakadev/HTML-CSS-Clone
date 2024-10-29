@@ -1,0 +1,8 @@
+@media (min-width: 900px) {
+  .main-container {
+    /* width: 40%; */
+  }
+  .right-container {
+    display: flex;
+  }
+}
